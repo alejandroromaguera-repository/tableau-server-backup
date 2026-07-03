@@ -103,7 +103,7 @@ class TableauAPI:
     def get_workbooks(self) -> List[dict]:
         """Obtener lista de workbooks"""
         try:
-            headers = {"X-Tableau-Auth": self.token}
+            headers = {"Tableau-Auth": self.token}
             workbooks_url = f"{self.base_url}/sites/{self.site}/workbooks"
             
             logger.info(f" Obteniendo lista de workbooks...")
@@ -239,7 +239,7 @@ def main():
     # Conectar a Tableau
     tableau = TableauAPI(tableau_server, tableau_site, tableau_user, tableau_password)
     if not tableau.authenticate():
-        logger.error("✗ No se pudo autenticar en Tableau")
+        logger.error(" No se pudo autenticar en Tableau")
         sys.exit(1)
     
     # Obtener workbooks
