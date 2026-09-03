@@ -1,1 +1,31 @@
+PS C:\tabcmd\TableauGitHub> schtasks /Query /TN "Backup Datasources Tableau a GitHub" /V /FO LIST
 
+Folder: \
+HostName:                             TABLEAUBRIDGE
+TaskName:                             \Backup Datasources Tableau a GitHub
+Next Run Time:                        04/09/2026 4:00:00
+Status:                               Ready
+Logon Mode:                           Interactive/Background
+Last Run Time:                        03/09/2026 14:37:39
+Last Result:                          1
+Author:                               TABLEAUBRIDGE\sdg_tableau
+Task To Run:                          C:\Python\Python313\python.exe descargar_datasources.py
+Start In:                             C:\tabcmd\TableauGitHub
+Comment:                              Descarga fuentes de datos publicadas de Tableau y las sube a GitHub
+Scheduled Task State:                 Enabled
+Idle Time:                            Disabled
+Power Management:                     Stop On Battery Mode, No Start On Batteries
+Run As User:                          sdg_tableau
+Delete Task If Not Rescheduled:       Disabled
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Schedule:                             Scheduling data is not available in this format.
+Schedule Type:                        Daily
+Start Time:                           4:00:00
+Start Date:                           04/09/2026
+End Date:                             N/A
+Days:                                 Every 1 day(s)
+Months:                               N/A
+Repeat: Every:                        Disabled
+Repeat: Until: Time:                  Disabled
+Repeat: Until: Duration:              Disabled
+Repeat: Stop If Still Running:        Disabled
