@@ -1,31 +1,97 @@
-PS C:\tabcmd\TableauGitHub> schtasks /Query /TN "Backup Datasources Tableau a GitHub" /V /FO LIST
-
-Folder: \
-HostName:                             TABLEAUBRIDGE
-TaskName:                             \Backup Datasources Tableau a GitHub
-Next Run Time:                        04/09/2026 4:00:00
-Status:                               Ready
-Logon Mode:                           Interactive/Background
-Last Run Time:                        03/09/2026 14:37:39
-Last Result:                          1
-Author:                               TABLEAUBRIDGE\sdg_tableau
-Task To Run:                          C:\Python\Python313\python.exe descargar_datasources.py
-Start In:                             C:\tabcmd\TableauGitHub
-Comment:                              Descarga fuentes de datos publicadas de Tableau y las sube a GitHub
-Scheduled Task State:                 Enabled
-Idle Time:                            Disabled
-Power Management:                     Stop On Battery Mode, No Start On Batteries
-Run As User:                          sdg_tableau
-Delete Task If Not Rescheduled:       Disabled
-Stop Task If Runs X Hours and X Mins: 72:00:00
-Schedule:                             Scheduling data is not available in this format.
-Schedule Type:                        Daily
-Start Time:                           4:00:00
-Start Date:                           04/09/2026
-End Date:                             N/A
-Days:                                 Every 1 day(s)
-Months:                               N/A
-Repeat: Every:                        Disabled
-Repeat: Until: Time:                  Disabled
-Repeat: Until: Duration:              Disabled
-Repeat: Stop If Still Running:        Disabled
+2026-09-21 11:17:39  INFO  ============================================================
+2026-09-21 11:17:39  INFO  ENVIO CSV DASHBOARDS - fecha de envio 21/09/2026
+2026-09-21 11:17:39  INFO  ============================================================
+2026-09-21 11:17:39  INFO  versions: 3.29, 2.4
+2026-09-21 11:17:40  INFO  Signed into https://dub01.online.tableau.com as user with id ae9b04e0-08c6-4b88-9bb9-595a9d2d1fa3
+2026-09-21 11:17:40  INFO  [1/8] CdM Venta Interna Detalle Marca MTD
+2026-09-21 11:17:40  INFO  Querying all workbooks on site
+2026-09-21 11:17:40  INFO  Querying all projects on site
+2026-09-21 11:17:40  INFO  Populated views for workbook (ID: ca8187f9-b57d-40cb-9481-32de862bfa70)
+2026-09-21 11:17:40  INFO  Querying Metadata API
+2026-09-21 11:17:41  INFO          Fuente 'ANL_VENTA_INTERNA_ESP': sin fecha de extracto (conexion en vivo)
+2026-09-21 11:17:41  INFO  Querying Metadata API
+2026-09-21 11:17:41  WARNING         Tabla CLABS_ANL_PRO.ANL_VENTA_INTERNA_ESP (lectura en vivo): se toma la fecha del extracto publicado 'ANL_VENTA_INTERNA_ESP' (Data Sources), actualizado el 21/09/2026
+2026-09-21 11:17:41  INFO  Populated csv for view (ID: 56bde428-418f-4acd-ae6b-59915d1db772)
+2026-09-21 11:17:44  INFO          Fecha de actualizacion correcta (21/09/2026), 528 filas
+2026-09-21 11:17:44  INFO          (modo --sin-enviar) CSV generado en csv_generados\CdM Venta Interna Detalle Marca MTD_2026-09-21.csv
+2026-09-21 11:17:44  INFO  [2/8] CdM Venta Interna Detalle Marca YTD
+2026-09-21 11:17:44  INFO  Querying all workbooks on site
+2026-09-21 11:17:44  INFO  Populated views for workbook (ID: 56a0a900-531c-4810-ba13-21d94f2cd08c)
+2026-09-21 11:17:44  INFO  Querying Metadata API
+2026-09-21 11:17:45  INFO          Fuente 'ANL_VENTA_INTERNA_ESP': actualizada el 21/09/2026
+2026-09-21 11:17:45  INFO          Fuente 'ANL_VENTA_INTERNA_ESP': sin fecha de extracto (conexion en vivo)
+2026-09-21 11:17:45  INFO  Querying Metadata API
+2026-09-21 11:17:45  WARNING         Tabla CLABS_ANL_PRO.ANL_VENTA_INTERNA_ESP (lectura en vivo): se toma la fecha del extracto publicado 'ANL_VENTA_INTERNA_ESP' (Data Sources), actualizado el 21/09/2026
+2026-09-21 11:17:45  INFO  Populated csv for view (ID: aaa9fd7b-cd58-4d60-b258-aee248264315)
+2026-09-21 11:17:48  INFO          Fecha de actualizacion correcta (21/09/2026), 600 filas
+2026-09-21 11:17:48  INFO          (modo --sin-enviar) CSV generado en csv_generados\CdM Venta Interna Detalle Marca YTD_2026-09-21.csv
+2026-09-21 11:17:48  INFO  [3/8] CdM Venta Interna Detalle Producto Agrupado MTD
+2026-09-21 11:17:48  INFO  Querying all workbooks on site
+2026-09-21 11:17:49  INFO  Populated views for workbook (ID: c38c8894-0c75-45a0-a7cb-c0feaf5cce02)
+2026-09-21 11:17:49  INFO  Querying Metadata API
+2026-09-21 11:17:49  INFO          Fuente 'ANL_VENTA_INTERNA_ESP': sin fecha de extracto (conexion en vivo)
+2026-09-21 11:17:49  INFO  Querying Metadata API
+2026-09-21 11:17:49  WARNING         Tabla CLABS_ANL_PRO.ANL_VENTA_INTERNA_ESP (lectura en vivo): se toma la fecha del extracto publicado 'ANL_VENTA_INTERNA_ESP' (Data Sources), actualizado el 21/09/2026
+2026-09-21 11:17:49  INFO  Populated csv for view (ID: 2e0c34c3-96e0-4df0-a8fd-a44ba0ec106b)
+2026-09-21 11:17:54  INFO          Fecha de actualizacion correcta (21/09/2026), 5832 filas
+2026-09-21 11:17:54  INFO          (modo --sin-enviar) CSV generado en csv_generados\CdM Venta Interna Detalle Producto Agrupado MTD_2026-09-21.csv
+2026-09-21 11:17:54  INFO  [4/8] CdM Venta Interna Detalle Producto Agrupado YTD
+2026-09-21 11:17:54  INFO  Querying all workbooks on site
+2026-09-21 11:17:54  INFO  Populated views for workbook (ID: 8e73ef4d-70cb-4273-8b03-b5a099a5d88f)
+2026-09-21 11:17:55  INFO  Querying Metadata API
+2026-09-21 11:17:55  INFO          Fuente 'ANL_VENTA_INTERNA_ESP': sin fecha de extracto (conexion en vivo)
+2026-09-21 11:17:55  INFO  Querying Metadata API
+2026-09-21 11:17:55  WARNING         Tabla CLABS_ANL_PRO.ANL_VENTA_INTERNA_ESP (lectura en vivo): se toma la fecha del extracto publicado 'ANL_VENTA_INTERNA_ESP' (Data Sources), actualizado el 21/09/2026
+2026-09-21 11:17:55  INFO  Populated csv for view (ID: 85c99039-cdea-4b12-9ea5-eee7b1609ed3)
+2026-09-21 11:18:01  INFO          Fecha de actualizacion correcta (21/09/2026), 7356 filas
+2026-09-21 11:18:01  INFO          (modo --sin-enviar) CSV generado en csv_generados\CdM Venta Interna Detalle Producto Agrupado YTD_2026-09-21.csv
+2026-09-21 11:18:01  INFO  [5/8] CdM SRI Marca MTD
+2026-09-21 11:18:01  INFO  Querying all workbooks on site
+2026-09-21 11:18:01  INFO  Populated views for workbook (ID: f2917c3d-565d-400f-9aeb-b265055ac158)
+2026-09-21 11:18:01  INFO  Querying Metadata API
+2026-09-21 11:18:02  INFO          Fuente 'ANL_VENTA_INTERNA_ESP': actualizada el 21/09/2026
+2026-09-21 11:18:02  INFO          Fuente 'ANL_VENTA_INTERNA_ESP': sin fecha de extracto (conexion en vivo)
+2026-09-21 11:18:02  INFO  Querying Metadata API
+2026-09-21 11:18:02  WARNING         Tabla CLABS_ANL_PRO.ANL_VENTA_INTERNA_ESP (lectura en vivo): se toma la fecha del extracto publicado 'ANL_VENTA_INTERNA_ESP' (Data Sources), actualizado el 21/09/2026
+2026-09-21 11:18:02  INFO  Populated csv for view (ID: f3b6beb5-d7b2-475c-ac3d-be8ab3eb8c45)
+2026-09-21 11:18:05  INFO          Fecha de actualizacion correcta (21/09/2026), 405 filas
+2026-09-21 11:18:05  INFO          (modo --sin-enviar) CSV generado en csv_generados\CdM SRI Marca MTD_2026-09-21.csv
+2026-09-21 11:18:05  INFO  [6/8] CdM SRI Marca YTD
+2026-09-21 11:18:05  INFO  Querying all workbooks on site
+2026-09-21 11:18:05  INFO  Populated views for workbook (ID: 23042a04-c6e7-4025-8d16-ca2aa34fb054)
+2026-09-21 11:18:05  INFO  Querying Metadata API
+2026-09-21 11:18:06  INFO          Fuente 'ANL_VENTA_INTERNA_ESP': actualizada el 21/09/2026
+2026-09-21 11:18:06  INFO          Fuente 'ANL_VENTA_INTERNA_ESP': sin fecha de extracto (conexion en vivo)
+2026-09-21 11:18:06  INFO  Querying Metadata API
+2026-09-21 11:18:06  WARNING         Tabla CLABS_ANL_PRO.ANL_VENTA_INTERNA_ESP (lectura en vivo): se toma la fecha del extracto publicado 'ANL_VENTA_INTERNA_ESP' (Data Sources), actualizado el 21/09/2026
+2026-09-21 11:18:06  INFO  Populated csv for view (ID: e13afb38-ac55-4a78-b073-db80ec537395)
+2026-09-21 11:18:10  INFO          Fecha de actualizacion correcta (21/09/2026), 459 filas
+2026-09-21 11:18:10  INFO          (modo --sin-enviar) CSV generado en csv_generados\CdM SRI Marca YTD_2026-09-21.csv
+2026-09-21 11:18:10  INFO  [7/8] CdM SRI Producto Agrupado MTD
+2026-09-21 11:18:10  INFO  Querying all workbooks on site
+2026-09-21 11:18:10  INFO  Populated views for workbook (ID: 5a70f7b6-81d2-4d25-ae63-5d122ca3cdb3)
+2026-09-21 11:18:10  INFO  Querying Metadata API
+2026-09-21 11:18:10  INFO          Fuente 'ANL_VENTA_INTERNA_ESP': actualizada el 21/09/2026
+2026-09-21 11:18:10  INFO          Fuente 'ANL_VENTA_INTERNA_ESP': sin fecha de extracto (conexion en vivo)
+2026-09-21 11:18:10  INFO  Querying Metadata API
+2026-09-21 11:18:11  WARNING         Tabla CLABS_ANL_PRO.ANL_VENTA_INTERNA_ESP (lectura en vivo): se toma la fecha del extracto publicado 'ANL_VENTA_INTERNA_ESP' (Data Sources), actualizado el 21/09/2026
+2026-09-21 11:18:11  WARNING         Tabla CLABS_ANL_PRO.ANL_VENTA_INTERNA_ESP: ningun extracto publicado se alimenta de ella, no se puede comprobar su fecha
+2026-09-21 11:18:11  INFO          Las fuentes en vivo no se pueden comprobar y se ignoran
+2026-09-21 11:18:11  INFO  Populated csv for view (ID: 83e15bc6-8732-452d-8021-fa4ccde99789)
+2026-09-21 11:18:15  INFO          Fecha de actualizacion correcta (21/09/2026), 4410 filas
+2026-09-21 11:18:15  INFO          (modo --sin-enviar) CSV generado en csv_generados\CdM SRI Producto Agrupado MTD_2026-09-21.csv
+2026-09-21 11:18:15  INFO  [8/8] CdM SRI Producto Agrupado YTD
+2026-09-21 11:18:15  INFO  Querying all workbooks on site
+2026-09-21 11:18:15  INFO  Populated views for workbook (ID: 6c3624ba-8ae6-47e1-88f5-739c4654d82c)
+2026-09-21 11:18:15  INFO  Querying Metadata API
+2026-09-21 11:18:15  INFO          Fuente 'ANL_VENTA_INTERNA_ESP': actualizada el 21/09/2026
+2026-09-21 11:18:15  INFO          Fuente 'ANL_VENTA_INTERNA_ESP': sin fecha de extracto (conexion en vivo)
+2026-09-21 11:18:15  INFO  Querying Metadata API
+2026-09-21 11:18:16  WARNING         Tabla CLABS_ANL_PRO.ANL_VENTA_INTERNA_ESP (lectura en vivo): se toma la fecha del extracto publicado 'ANL_VENTA_INTERNA_ESP' (Data Sources), actualizado el 21/09/2026
+2026-09-21 11:18:16  INFO  Populated csv for view (ID: 63823dbd-1794-4d12-a2dc-6057a3928600)
+2026-09-21 11:18:21  INFO          Fecha de actualizacion correcta (21/09/2026), 5553 filas
+2026-09-21 11:18:21  INFO          (modo --sin-enviar) CSV generado en csv_generados\CdM SRI Producto Agrupado YTD_2026-09-21.csv
+2026-09-21 11:18:21  INFO  Signed out
+2026-09-21 11:18:21  INFO  ============================================================
+2026-09-21 11:18:21  INFO  RESUMEN: enviados 8 | descartados por fecha 0 | errores 0 | ya enviados hoy 0 | 42s
+2026-09-21 11:18:21  INFO  ============================================================
